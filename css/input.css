@@ -27,11 +27,11 @@
 }
 
 @utility bg-hero {
-  background-image: url('./assets/hero/bg.jpg');
+  background-image: url('/assets/hero/bg.jpg');
 }
 
 @utility bg-grid {
-  background-image: url('./assets/grid.png');
+  background-image: url('/assets/grid.png');
 }
 
 body {
