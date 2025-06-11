@@ -4,8 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Interno Website</title>
-    <!-- CSS -->
-    <link rel="stylesheet" href="./dist/styles.css" />
     <!-- Icons -->
     <link
       rel="stylesheet"
@@ -18,7 +16,12 @@
       href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+    <!-- Swiper JS -->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="dist/styles.css" />
   </head>
+
   <body class="bg-gray-100">
     <!-- header -->
     <header class="sticky top-0 h-[90px] shadow-xl z-30 bg-white">
@@ -158,32 +161,184 @@
                 </div>
               </div>
               <!-- btn -->
-               <button type="button" class="btn btn-primary mx-auto xl:mx-0">
-              Get free estimation<i class="ri-arrow-right-line text-accent"></i>
-            </button>
+              <button type="button" class="btn btn-primary mx-auto xl:mx-0">
+                Get free estimation<i
+                  class="ri-arrow-right-line text-accent"
+                ></i>
+              </button>
             </div>
             <!-- img -->
             <div
               class="about__img order-1 xl:order-none max-w-[453px] mx-auto xl:max-w-none xl:mx-0"
             >
-              <img src="assets/about/img.png" alt="about image" />
+              <img
+                src="assets/about/img.png"
+                alt="kitchen interior image related to about us section"
+              />
             </div>
           </div>
         </div>
       </section>
 
       <!-- testimonial -->
-       <section class="testimonial"></section>
+      <section class="testimonial mt-[80px] xl:mt-[200px] relative z-20">
+        <div
+          class="testimonial__bg container mx-auto bg-accent-secondary rounded-[70px] px-6"
+        >
+          <div class="flex flex-col pt-[80px] pb-[110px]">
+            <h2 class="testimonial__title h2 mb-9 text-center">
+              What Clients Say
+            </h2>
+            <!-- slider -->
+            <div class="w-full">
+              <div class="testimonial__slider swiper h-[400px]">
+                <div class="swiper-wrapper">
+                  <!-- slide-1 -->
+                  <div class="swiper-slide">
+                    <!-- item -->
+                    <div
+                      class="testimonial__item w-full max-w-[450px] h-[340px] bg-white rounded-[30px] flex flex-col justify-center p-9 mx-auto"
+                    >
+                      <div class="flex gap-4 mb-6">
+                        <img
+                          src="./assets/testimonial/01.png"
+                          alt="client avatar"
+                        />
+                        <div>
+                          <h3 class="h3">Natasha Mith</h3>
+                          <div>Krakow, Poland</div>
+                        </div>
+                      </div>
+                      <p>
+                        Lorem Ipsum is simply dummy text of the typesetting
+                        industry. Ipsum has been.
+                      </p>
+                    </div>
+                  </div>
+                  <!-- slide-2 -->
+                  <div class="swiper-slide">
+                    <!-- item -->
+                    <div
+                      class="testimonial__item w-full max-w-[450px] h-[340px] bg-white rounded-[30px] flex flex-col justify-center p-9 mx-auto"
+                    >
+                      <div class="flex gap-4 mb-6">
+                        <img
+                          src="./assets/testimonial/02.png"
+                          alt="client avatar"
+                        />
+                        <div>
+                          <h3 class="h3">Jessica White</h3>
+                          <div>Ottawa, Canada</div>
+                        </div>
+                      </div>
+                      <p>
+                        Lorem Ipsum is simply dummy text of the typesetting
+                        industry. Ipsum has been.
+                      </p>
+                    </div>
+                  </div>
+                  <!-- slide-3 -->
+                  <div class="swiper-slide">
+                    <!-- item -->
+                    <div
+                      class="testimonial__item w-full max-w-[450px] h-[340px] bg-white rounded-[30px] flex flex-col justify-center p-9 mx-auto"
+                    >
+                      <div class="flex gap-4 mb-6">
+                        <img
+                          src="./assets/testimonial/03.png"
+                          alt="client avatar"
+                        />
+                        <div>
+                          <h3 class="h3">Paul Huffer</h3>
+                          <div>Hamburg, Germany</div>
+                        </div>
+                      </div>
+                      <p>
+                        Lorem Ipsum is simply dummy text of the typesetting
+                        industry. Ipsum has been.
+                      </p>
+                    </div>
+                  </div>
+                  <!-- slide-4 -->
+                  <div class="swiper-slide">
+                    <!-- item -->
+                    <div
+                      class="testimonial__item w-full max-w-[450px] h-[340px] bg-white rounded-[30px] flex flex-col justify-center p-9 mx-auto"
+                    >
+                      <div class="flex gap-4 mb-6">
+                        <img
+                          src="./assets/testimonial/04.png"
+                          alt="client avatar"
+                        />
+                        <div>
+                          <h3 class="h3">Marie Dubois</h3>
+                          <div>Blue Ridge, France</div>
+                        </div>
+                      </div>
+                      <p>
+                        Lorem Ipsum is simply dummy text of the typesetting
+                        industry. Ipsum has been.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <!-- swiper pagination -->
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- brands -->
+      <section class="brands mt-[80px] xl:mt-[200px] relative z-20">
+        <div class="container mx-auto">
+          <div
+            class="flex flex-col xl:flex-row justify-between items-center gap-12"
+          >
+            <img
+              class="brands__img"
+              src="assets/brands/01.svg"
+              alt="brand label"
+            />
+            <img
+              class="brands__img"
+              src="assets/brands/02.svg"
+              alt="brand label"
+            />
+            <img
+              class="brands__img"
+              src="assets/brands/03.svg"
+              alt="brand label"
+            />
+            <img
+              class="brands__img"
+              src="assets/brands/04.svg"
+              alt="brand label"
+            />
+            <img
+              class="brands__img"
+              src="assets/brands/05.svg"
+              alt="brand label"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- work -->
+      <section class="work mt-[80px] xl:mt-[200px] relative z-20">
+        <div class="container mx-auto">work</div>
+      </section>
 
       <!-- temporary div -->
       <div class="h-[3000px]"></div>
     </main>
 
     <!-- Scroll Reveal -->
-    <script src="./js/scrollreveal.min.js"></script>
+    <script src="js/scrollreveal.min.js"></script>
     <!-- Swiper -->
-    <script src="./js/swiper-bundle.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
     <!-- Main JS -->
-    <script src="./js/main.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>

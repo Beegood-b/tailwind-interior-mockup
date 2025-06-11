@@ -7,7 +7,6 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
-    --color-pink-200: oklch(89.9% 0.061 343.231);
     --color-gray-100: oklch(96.7% 0.003 264.542);
     --color-white: #fff;
     --spacing: 0.25rem;
@@ -32,6 +31,7 @@
     --color-primary-hover: #343E4A;
     --color-secondary: #4D5053;
     --color-accent: #CDA274;
+    --color-accent-secondary: #F4F0EC;
     --color-accent-hover: #B88C5D;
   }
 }
@@ -253,8 +253,14 @@
   .mb-5 {
     margin-bottom: calc(var(--spacing) * 5);
   }
+  .mb-6 {
+    margin-bottom: calc(var(--spacing) * 6);
+  }
   .mb-8 {
     margin-bottom: calc(var(--spacing) * 8);
+  }
+  .mb-9 {
+    margin-bottom: calc(var(--spacing) * 9);
   }
   .flex {
     display: flex;
@@ -274,6 +280,12 @@
   .h-\[93px\] {
     height: 93px;
   }
+  .h-\[340px\] {
+    height: 340px;
+  }
+  .h-\[400px\] {
+    height: 400px;
+  }
   .h-\[640px\] {
     height: 640px;
   }
@@ -291,6 +303,9 @@
   }
   .w-full {
     width: 100%;
+  }
+  .max-w-\[450px\] {
+    max-width: 450px;
   }
   .max-w-\[453px\] {
     max-width: 453px;
@@ -349,12 +364,21 @@
   .overflow-hidden {
     overflow: hidden;
   }
+  .rounded-\[30px\] {
+    border-radius: 30px;
+  }
+  .rounded-\[70px\] {
+    border-radius: 70px;
+  }
   .rounded-full {
     border-radius: calc(infinity * 1px);
   }
   .border-t {
     border-top-style: var(--tw-border-style);
     border-top-width: 1px;
+  }
+  .bg-accent-secondary {
+    background-color: var(--color-accent-secondary);
   }
   .bg-accent\/15 {
     background-color: color-mix(in srgb, #CDA274 15%, transparent);
@@ -382,6 +406,18 @@
   }
   .p-0 {
     padding: calc(var(--spacing) * 0);
+  }
+  .p-9 {
+    padding: calc(var(--spacing) * 9);
+  }
+  .px-6 {
+    padding-inline: calc(var(--spacing) * 6);
+  }
+  .pt-\[80px\] {
+    padding-top: 80px;
+  }
+  .pb-\[110px\] {
+    padding-bottom: 110px;
   }
   .text-center {
     text-align: center;
@@ -645,6 +681,9 @@ h1, h2, h3, h4, h5, h6 {
 .nav-is-open {
   height: 350px;
   padding: calc(var(--spacing) * 6);
+}
+.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+  background-color: var(--color-primary);
 }
 @property --tw-rotate-x {
   syntax: "*";
