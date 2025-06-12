@@ -1,8 +1,17 @@
+// burger btn
 const navTriggerBtn = document.getElementById("nav-trigger-btn");
 const menuList = document.getElementById("menu-list");
 
 navTriggerBtn.addEventListener("click", () => {
   menuList.classList.toggle("nav-is-open");
+});
+
+// parallax
+var image = document.querySelectorAll(".hero__img");
+new simpleParallax(image, {
+  orientation: "down",
+  scale: 1.30,
+  delay: 0.7,
 });
 
 // swiper

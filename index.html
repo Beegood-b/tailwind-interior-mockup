@@ -16,9 +16,9 @@
       href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
-    <!-- Swiper JS -->
+    <!-- Swiper -->
     <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
-    <!-- CSS -->
+    <!-- Styles -->
     <link rel="stylesheet" href="./dist/styles.css" />
   </head>
 
@@ -38,7 +38,7 @@
           </div>
           <ul
             id="menu-list"
-            class="fixed w-full h-0 p-0 bg-white overflow-hidden border-t top-[90px] left-0 right-0 flex flex-col gap-5 lg:relative lg:flex-row lg:p-0 lg:top-0 lg:border-none lg:h-full transition-all duration-300"
+            class="fixed w-full h-0 p-0 bg-white overflow-hidden top-[90px] left-0 right-0 flex flex-col gap-5 lg:relative lg:flex-row lg:p-0 lg:top-0 lg:border-none lg:h-full transition-all duration-300"
           >
             <li><a href="#">Home</a></li>
             <li><a href="#">About</a></li>
@@ -59,10 +59,20 @@
       ></div>
 
       <!-- hero -->
-      <section
-        class="hero h-[640px] xl:h-[840px] bg-hero bg-center lg:bg-cover bg-no-repeat bg-fixed xl:rounded-bl-[290px] relative z-20"
-      >
-        <div class="container mx-auto h-full flex items-center">
+      <section class="hero relative">
+        <!-- img -->
+        <div
+          class="lg:max-h-[800px] lg:overflow-hidden lg:rounded-bl-[200px] lg:flex lg:items-center"
+        >
+          <img
+            class="hero__img blur-[1px] md:blur-none"
+            src="./assets/hero/bg.jpg"
+            alt=""
+          />
+        </div>
+        <div
+          class="container mx-auto h-full flex items-center absolute inset-0"
+        >
           <!-- text -->
           <div
             class="hero__text w-[567px] flex flex-col items-center text-center xl:text-left lg:items-start"
@@ -334,11 +344,14 @@
       <div class="h-[3000px]"></div>
     </main>
 
-    <!-- Scroll Reveal -->
+    <!-- Scroll reveal -->
     <script src="./js/scrollreveal.min.js"></script>
     <!-- Swiper -->
     <script src="./js/swiper-bundle.min.js"></script>
+    <!-- Parallax -->
+    <script src="./js/simpleParallax.min.js"></script>
     <!-- Main JS -->
     <script src="./js/main.js"></script>
+    <script></script>
   </body>
 </html>
