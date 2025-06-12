@@ -11,7 +11,6 @@ var image = document.querySelectorAll(".hero__img");
 new simpleParallax(image, {
   orientation: "down",
   scale: 1.30,
-  delay: 0.7,
 });
 
 // swiper
