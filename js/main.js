@@ -34,3 +34,7 @@ const swiper = new Swiper(".swiper", {
     },
   },
 });
+
+// scroll reveal animations
+
+
