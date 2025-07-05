@@ -783,12 +783,6 @@
       gap: 100px;
     }
   }
-  .xl\:border-t {
-    @media (width >= 1200px) {
-      border-top-style: var(--tw-border-style);
-      border-top-width: 1px;
-    }
-  }
   .xl\:border-r {
     @media (width >= 1200px) {
       border-right-style: var(--tw-border-style);
