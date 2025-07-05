@@ -27,7 +27,7 @@
     <header class="sticky top-0 h-[90px] shadow-xl z-30 bg-white">
       <div class="container mx-auto flex justify-between h-full items-center">
         <!-- logo -->
-        <a href="#">
+        <a href="/">
           <img src="assets/logo.svg" alt="logo-image" />
         </a>
         <!-- nav -->
@@ -40,12 +40,12 @@
             id="menu-list"
             class="fixed w-full h-0 p-0 bg-white overflow-hidden top-[90px] left-0 right-0 flex flex-col gap-5 lg:relative lg:flex-row lg:p-0 lg:top-0 lg:border-none lg:h-full transition-all duration-300"
           >
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Testimonials</a></li>
-            <li><a href="#">Our Work</a></li>
-            <li><a href="#">News</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="/">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#testimonial">Testimonial</a></li>
+            <li><a href="#our-work">Our Work</a></li>
+            <li><a href="#news">News</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
         </nav>
       </div>
@@ -58,20 +58,9 @@
         class="xl:bg-grid xl:bg-center xl:bg-repeat-y fixed top-0 bottom-0 left-0 right-0 z-10"
       ></div> -->
       <!-- hero -->
-      <section class="hero relative min-h-dvh">
-        <!-- img -->
+      <section class="hero h-[640px] xl:h-[840px] bg-hero bg-center lg:bg-cover bg-no-repeat bg-fixed xl:rounded-bl-[290px] relative z-20">
         <div
-          class="h-dvh min-h-dvh lg:max-h-[800px] lg:overflow-hidden lg:rounded-bl-[200px] lg:flex lg:items-center"
-        >
-          <img
-            class="hero__img w-full h-full object-cover"
-            src="./assets/hero/bg.jpg"
-            alt=""
-          />
-        </div>
-
-        <div
-          class="container mx-auto h-full flex items-center absolute inset-0"
+          class="container mx-auto h-full flex justify-center xl:justify-start items-center absolute inset-0"
         >
           <div
             class="hero__text w-[567px] flex flex-col items-center text-center xl:text-left lg:items-start"
@@ -140,7 +129,7 @@
       </section>
 
       <!-- about -->
-      <section class="about mt-[80px] xl:mt-[200px] relative z-20">
+      <section id="about" class="about mt-[80px] xl:mt-[200px] relative z-20">
         <div class="container mx-auto xl:px-0">
           <div
             class="flex flex-col xl:flex-row text-center xl:text-left justify-between items-center gap-8 xl:gap-[74px]"
@@ -190,7 +179,10 @@
       </section>
 
       <!-- testimonial -->
-      <section class="testimonial mt-[80px] xl:mt-[200px] relative z-20">
+      <section
+        id="testimonial"
+        class="testimonial mt-[80px] xl:mt-[200px] relative z-20"
+      >
         <div
           class="testimonial__bg container mx-auto bg-accent-secondary rounded-[70px] px-6"
         >
@@ -335,7 +327,7 @@
       </section>
 
       <!-- work -->
-      <section class="work mt-[80px] xl:mt-[150px] relative z-20">
+      <section id="our-work" class="work mt-[80px] xl:mt-[150px] relative z-20">
         <div class="container mx-auto xl:px-0">
           <!-- text -->
           <div class="text-center mb-24">
@@ -358,7 +350,7 @@
                   <p>Decor/Architecture</p>
                 </div>
                 <button
-                  class="bg-accent-secondary hover:bg-accent-secondary/20 cursor-pointer w-[70px] h-[70px] rounded-full"
+                  class="bg-accent-secondary hover:bg-accent-secondary/20 cursor-pointer transition-all w-[70px] h-[70px] rounded-full"
                 >
                   <i
                     class="ri-arrow-right-s-line text-3xl text-primary pl-1"
@@ -375,7 +367,7 @@
                   <p>Decor/Architecture</p>
                 </div>
                 <button
-                  class="bg-accent-secondary hover:bg-accent-secondary/20 cursor-pointer w-[70px] h-[70px] rounded-full"
+                  class="bg-accent-secondary hover:bg-accent-secondary/20 cursor-pointer transition-all w-[70px] h-[70px] rounded-full"
                 >
                   <i
                     class="ri-arrow-right-s-line text-3xl text-primary pl-1"
@@ -392,7 +384,7 @@
                   <p>Decor/Architecture</p>
                 </div>
                 <button
-                  class="bg-accent-secondary hover:bg-accent-secondary/20 cursor-pointer w-[70px] h-[70px] rounded-full"
+                  class="bg-accent-secondary hover:bg-accent-secondary/20 cursor-pointer transition-all w-[70px] h-[70px] rounded-full"
                 >
                   <i
                     class="ri-arrow-right-s-line text-3xl text-primary pl-1"
@@ -409,7 +401,7 @@
                   <p>Decor/Architecture</p>
                 </div>
                 <button
-                  class="bg-accent-secondary hover:bg-accent-secondary/20 cursor-pointer w-[70px] h-[70px] rounded-full"
+                  class="bg-accent-secondary hover:bg-accent-secondary/20 cursor-pointer transition-all w-[70px] h-[70px] rounded-full"
                 >
                   <i
                     class="ri-arrow-right-s-line text-3xl text-primary pl-1"
@@ -453,7 +445,7 @@
       </section>
 
       <!-- news -->
-      <section class="news mt-[80px] xl:mt-[150px] relative z-20">
+      <section id="news" class="news mt-[80px] xl:mt-[150px] relative z-20">
         <div class="container mx-auto px-0">
           <!-- text -->
           <div class="max-w-[810px] mx-auto text-center mb-[52px]">
@@ -530,7 +522,10 @@
       </section>
 
       <!-- contact -->
-      <section class="contact mt-[80px] xl:mt-[150px] relative z-20">
+      <section
+        id="contact"
+        class="contact scroll-mt-[90px] mt-[80px] xl:mt-[150px] relative z-20"
+      >
         <div
           class="contact__container container mx-auto bg-primary sm:rounded-[70px] py-[80px]"
         >
@@ -585,11 +580,11 @@
               <div class="footer__item">
                 <h3 class="h3 mb-3">Pages</h3>
                 <ul class="flex flex-col gap-4">
-                  <li><a href="">About Us</a></li>
-                  <li><a href="">Testimonials</a></li>
-                  <li><a href="">Our Work</a></li>
-                  <li><a href="">News</a></li>
-                  <li><a href="">Contact</a></li>
+                  <li><a href="#about">About Us</a></li>
+                  <li><a href="#testimonial">Testimonial</a></li>
+                  <li><a href="#our-work">Our Work</a></li>
+                  <li><a href="#news">News</a></li>
+                  <li><a href="#contact">Contact</a></li>
                 </ul>
               </div>
               <div class="footer__item">
@@ -616,9 +611,7 @@
           </div>
         </div>
         <!-- copyright -->
-        <p
-          class="footer__copyright text-center text-lg py-10 bg-white"
-        >
+        <p class="footer__copyright text-center text-lg py-10 bg-white">
           Copyright &copy; Interno 2025. All Rights Reserved.
         </p>
       </footer>

@@ -26,12 +26,16 @@
   }
 }
 
-/* @utility bg-hero {
+@utility bg-hero {
   background-image: url('../assets/hero/bg.jpg');
-} */
+}
 
 @utility bg-grid {
   background-image: url('../assets/grid.png');
+}
+
+html {
+  @apply scroll-smooth scroll-pt-[90px];
 }
 
 body {

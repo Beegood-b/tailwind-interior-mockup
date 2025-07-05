@@ -1,110 +1,103 @@
-// burger btn
-const navTriggerBtn = document.getElementById("nav-trigger-btn");
-const menuList = document.getElementById("menu-list");
+document.addEventListener("DOMContentLoaded", () => {
 
-navTriggerBtn.addEventListener("click", () => {
-  menuList.classList.toggle("nav-is-open");
-});
+  // burger btn
+  const navTriggerBtn = document.getElementById("nav-trigger-btn");
+  const menuList = document.getElementById("menu-list");
 
-// parallax
-var image = document.querySelectorAll(".hero__img");
-new simpleParallax(image, {
-  orientation: "down",
-  scale: 1.3,
-});
+  navTriggerBtn.addEventListener("click", () => {
+    menuList.classList.toggle("nav-is-open");
+  });
 
-// swiper
-const swiper = new Swiper(".swiper", {
-  loop: true,
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-  slidesPerView: 3,
-  spaceBetween: 20,
-  breakpoints: {
-    320: {
-      slidesPerView: 1,
+  // swiper
+  const swiper = new Swiper(".swiper", {
+    loop: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
     },
-    960: {
-      slidesPerView: 2,
+    slidesPerView: 3,
+    spaceBetween: 20,
+    breakpoints: {
+      320: {
+        slidesPerView: 1,
+      },
+      960: {
+        slidesPerView: 2,
+      },
+      1200: {
+        slidesPerView: 3,
+      },
     },
-    1200: {
-      slidesPerView: 3,
-    },
-  },
+  });
+
+  // scroll reveal animations
+  const sr = ScrollReveal({
+    origin: "bottom",
+    distance: "60px",
+    duration: "2000",
+    delay: 300,
+    // reset: true
+  });
+
+  // hero
+  sr.reveal(".hero__text", { origin: "top" });
+
+  // steps
+  sr.reveal(".steps__step", {
+    distance: "100px",
+    interval: 100,
+  });
+
+  // about
+  sr.reveal(".about__text", { origin: "left" });
+  sr.reveal(".about__img", {
+    origin: "right",
+    delay: 800,
+  });
+
+  // testimonial
+  sr.reveal(".testimonial__bg", { delay: 800 });
+  sr.reveal(".testimonial__title");
+  sr.reveal(".testimonial__slider", { delay: 1000 });
+
+  // brands
+  sr.reveal(".brands__img", {
+    delay: 600,
+    distance: "100px",
+    interval: 100,
+  });
+
+  // work
+  sr.reveal(".work__title");
+  sr.reveal(".work__subtitle", { delay: 800 });
+  sr.reveal(".work__grid", { delay: 1000 });
+
+  // stats
+  sr.reveal(".stats");
+  sr.reveal(".stats__item", {
+    distance: "100px",
+    interval: 100,
+  });
+
+  // news
+  sr.reveal(".news__title");
+  sr.reveal(".news__subtitle", {
+    delay: 800,
+  });
+
+  sr.reveal(".news__item", {
+    distance: "100px",
+    interval: 100,
+    delay: 1000,
+  });
+
+  // contact
+  sr.reveal(".contact__container");
+  sr.reveal(".contact__text", { delay: 800 });
+
+  // footer
+  sr.reveal(".footer__item", {
+    distance: "100px",
+    interval: 100,
+  });
 });
-
-// scroll reveal animations
-
-const sr = ScrollReveal({
-  origin: "bottom",
-  distance: "60px",
-  duration: "2000",
-  delay: 300,
-  // reset: true
-});
-
-// hero
-sr.reveal(".hero__text", { origin: "top" });
-
-// steps
-sr.reveal(".steps__step", {
-  distance: "100px",
-  interval: 100,
-});
-
-// about
-sr.reveal(".about__text", { origin: "left" });
-sr.reveal(".about__img", {
-  origin: "right",
-  delay: 800,
-});
-
-// testimonial
-sr.reveal(".testimonial__bg", { delay: 800 });
-sr.reveal(".testimonial__title");
-sr.reveal(".testimonial__slider", { delay: 1000 });
-
-// brands
-sr.reveal(".brands__img", {
-  delay: 600,
-  distance: "100px",
-  interval: 100,
-});
-
-// work
-sr.reveal(".work__title");
-sr.reveal(".work__subtitle", { delay: 800 });
-sr.reveal(".work__grid", { delay: 1000 });
-
-// stats
-sr.reveal(".stats");
-sr.reveal(".stats__item", {
-  distance: "100px",
-  interval: 100,
-});
-
-// news
-sr.reveal(".news__title");
-sr.reveal(".news__subtitle", {
-  delay: 800,
-});
-
-sr.reveal(".news__item", {
-  distance: "100px",
-  interval: 100,
-  delay: 1000,
-});
-
-// contact
-sr.reveal(".contact__container");
-sr.reveal(".contact__text", { delay: 800 });
-
-// footer
-sr.reveal(".footer__item", {
-  distance: "100px",
-  interval: 100,
-});
-
-sr.reveal(".footer__copyright");
